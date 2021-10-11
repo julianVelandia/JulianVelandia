@@ -10,17 +10,21 @@
     --w-nav-icon: 25px;
     --w-nav-input: 500px;
     --w-card-img: 700px;
+    --w-footer-item: 50px;
 
     --m-lados: 60px;
     --m-lados-m: 20px;
     --m-nav: 15px;
     --m-card-img: 80px;
+    --m-footer-net: 60px;
 
     --f-nav-input: 20px;
     --f-hero: 60px;
     --f-card-h1: 50px;
     --f-card-h2: 30px;
     --f-card-h3: 20px;
+    --f-footer-h1: 30px;
+    --f-footer-h2: 20px;
 
     --b-card-img: 10px;
 
@@ -154,6 +158,46 @@ input{
     margin: 0 5px;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: var(--m-lados) var(--m-lados-m);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer h1{
+    color: white;
+    font-size: var(--f-footer-h1);
+    font-weight: bold;
+    margin:0px;
+}
+
+.footer-networks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: var(--m-footer-net) 0;
+    width: 45%;
+} 
+
+.footer-networks a{
+    text-decoration: none;
+    margin:0;
+}
+
+.footer-networks img{
+    width: var(--w-footer-item);
+    margin:0;
+}
+
+.footer h2{
+    color: white;
+    font-size: var(--f-footer-h2);
+    font-weight: normal;
+    text-align: center;
+}
+
 .article{
     margin:  6%;
     display: flex;
@@ -227,6 +271,11 @@ input{
     --b-card-img: 10px;
     --s-nav: 2px;
     --s-nav-s: 5px;
+
+    --w-footer-item: 45px;
+    --m-footer-net: 55px;
+    --f-footer-h1: 25px;
+    --f-footer-h2: 15px;
 }
 }
 
@@ -251,6 +300,11 @@ input{
         --b-card-img: 10px;
         --s-nav: 1px;
         --s-nav-s: 3px;
+
+        --w-footer-item: 45px;
+        --m-footer-net: 50px;
+        --f-footer-h1: 25px;
+        --f-footer-h2: 13px;
     }
     }
 
@@ -274,6 +328,11 @@ input{
         --b-card-img: 7px;
         --s-nav: 1px;
         --s-nav-s: 3px;
+
+        --w-footer-item: 37px;
+        --m-footer-net: 50px;
+        --f-footer-h1: 25px;
+        --f-footer-h2: 13px;
     }
 }
 
@@ -297,6 +356,11 @@ input{
         --b-card-img: 5px;
         --s-nav: 1px;
         --s-nav-s: 2px;
+
+        --w-footer-item: 35px;
+        --m-footer-net: 45px;
+        --f-footer-h1: 20px;
+        --f-footer-h2: 12px;
     }
 }
 
@@ -321,5 +385,10 @@ input{
         --b-card-img: 4px;
         --s-nav: 1px;
         --s-nav-s: 2px;
+
+        --w-footer-item: 30px;
+        --m-footer-net: 45px;
+        --f-footer-h1: 20px;
+        --f-footer-h2: 12px;
     }
 }
