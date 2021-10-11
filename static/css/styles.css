@@ -2,6 +2,9 @@
 
 :root {
     --color-Background: #161B22;
+    --color-gris-0: #E8E8E8;
+    --color-gris-1: #D1D1D1;
+
 }
 
 *{
@@ -11,38 +14,122 @@
     background-color: var(--color-Background);
 }
 
-.hero{
+.navegation{
     width: 100%;
-    height: 10vh;
-    background-color: black;
+    background-color: var(--color-Background);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:  center;
+    justify-content: flex-start;
 }
 
+
 #searchBox{
-    width: 6%;
-    margin: 6%;
+    margin: 6% 6% 3% 6%;
     padding: 3%;
     border-radius: 50px;
     background-color:var(--color-Background);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 2px 2px 5px 0px rgba(255,255,255,0.2);
+    transition: 2s;
 }
 
-#search{
+#searchIcon{
     width: 15px;
     cursor:pointer;
+    transition: 2s;
+
 }
 
 input{
-    display:none;
     font-size: 10px;
-    width:60%;
+    width:0;
     border: 0px;
     background: transparent;
     outline: none;
     color: rgb(255, 255, 255);
+    transition: 2s;
+    margin: 0 25% ;
 }
+
+.active input{
+    width:100%;
+}
+.active{
+    transition: 2s;
+    width: 60%;
+}
+
+
+.hero{
+    margin: 3% 6%;
+}
+
+.hero h1{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.linea{
+    margin: 8% 6%;
+
+}
+
+.linea hr {
+    border-radius: 10px;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+  }
+
+.articulo {
+    margin: 3% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.articulo-texto{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.articulo-texto h1{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.articulo-texto h2{
+    color: var(--color-gris-0);
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.articulo-imagen{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.articulo-imagen img{
+    width: 80%;
+    margin: 0;
+    margin-bottom: 10%;
+    border-radius: 5px;
+}
+
+.articulo-imagen h3{
+    color: var(--color-gris-1);
+    font-size: 8px;
+    font-weight: normal;
+}
+
