@@ -5,13 +5,16 @@
     --color-Background: #161B22;
     --color-gris-0: #E8E8E8;
     --color-gris-1: #D1D1D1;
+    --color-azul-claro: #1058D5;
 
 
     --w-nav-icon: 25px;
     --w-nav-input: 500px;
     --w-card-img: 700px;
     --w-footer-item: 50px;
-
+    --w-nav-dark:70px;
+    --w-nav-luna: 30px;
+    --w-hero-icon: 70px;
 
     --m-lados: 60px;
     --m-lados-m: 20px;
@@ -31,6 +34,7 @@
     --f-footer-h2: 20px;
     --f-article-h1: 40px;
     --f-article-h2:35px;
+    --f-hero-h3: 20px;
 
     --b-card-img: 10px;
 
@@ -54,12 +58,20 @@
 
 .navegation{
     margin: var(--m-lados) var(--m-lados-m) ;
-    width: 100%;
+    width: 95%;
     
     background-color: var(--color-Background);
     display: flex;
     align-items:  center;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+.navegation-container{
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
 }
 
 .navegation-logo{
@@ -124,7 +136,6 @@ input{
     margin-left: 0;
 }
 
-
 #navegationFlechas{
     margin: 0;
     height: 0;
@@ -133,8 +144,26 @@ input{
     transition-delay: 0.5s;
 }
 
+.navegation-dark{
+    width: var(--w-nav-dark);
+    margin: auto 0;
+   
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: var(--s-nav) var(--s-nav) var(--s-nav-s) 0px rgba(255,255,255,0.2);
+    text-decoration: none;
+}
 
+.navegation-dark img{
+    border-radius: 50px;
+    margin: 3px 5px;
 
+    width: var(--w-nav-luna);
+    cursor:pointer;
+    transition: 2s;
+}
 
 
 
@@ -144,13 +173,51 @@ input{
 
 .hero{
     margin: var(--m-lados) var(--m-lados-m);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
 }
 
-.hero h1{
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin:0px;
+}
+
+.hero-text h1{
     color: white;
     font-size: var(--f-hero);
     font-weight: bold;
 }
+
+.hero-text img{
+    margin: auto 0;
+    width: var(--w-hero-icon);
+}
+
+.hero-about{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin:0px;
+}
+
+.hero-about h3{
+    color: var(--color-azul-claro);
+    font-size: var(--f-hero-h3);
+    font-weight: normal;
+    margin: var(--m-nav-g) 0;
+}
+
+
+
+
+
+
+
 
 
 
@@ -161,7 +228,6 @@ input{
 
 .line{
     margin: var(--m-lados) var(--m-lados-m);
-
 }
 
 .line hr {
