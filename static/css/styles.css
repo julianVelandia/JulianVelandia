@@ -12,11 +12,13 @@
     --w-card-img: 700px;
     --w-footer-item: 50px;
 
+
     --m-lados: 60px;
     --m-lados-m: 20px;
     --m-nav: 15px;
     --m-card-img: 80px;
     --m-footer-net: 60px;
+    --m-article: 60px;
 
     --f-nav-input: 20px;
     --f-hero: 60px;
@@ -25,6 +27,8 @@
     --f-card-h3: 20px;
     --f-footer-h1: 30px;
     --f-footer-h2: 20px;
+    --f-article-h1: 40px;
+    --f-article-h2:35px;
 
     --b-card-img: 10px;
 
@@ -199,7 +203,7 @@ input{
 }
 
 .article{
-    margin:  6%;
+    margin: var(--m-lados) var(--m-lados-m);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -208,25 +212,27 @@ input{
 }
 
 .article h1{
-    width: 70%;
+    width: 40%;
     color: white;
-    font-size: 20px;
+    font-size: var(--f-article-h1);
     font-weight: bold;
-    margin-bottom: 10%;
+    margin: 0;
+    margin-bottom: var(--m-article);
     
 }
 
 .article img{
-    width: 100%;
+    width: 85%;
     margin: 0;
-    margin-bottom: 10%;
-    border-radius: 5px;
+    margin-bottom: var(--m-article);
+    border-radius: var(--b-card-img);
 }
 
 .article h2{
     color: var(--color-gris-0);
-    font-size: 15px;
+    font-size: var(--f-article-h2);
     font-weight: normal;
+    margin-bottom: var(--m-article);
 }
 
 
@@ -276,6 +282,10 @@ input{
     --m-footer-net: 55px;
     --f-footer-h1: 25px;
     --f-footer-h2: 15px;
+
+    --m-article: 55px;
+--f-article-h1: 38px;
+    --f-article-h2:32px;
 }
 }
 
@@ -305,6 +315,10 @@ input{
         --m-footer-net: 50px;
         --f-footer-h1: 25px;
         --f-footer-h2: 13px;
+
+        --m-article: 50px;
+        --f-article-h1: 35px;
+            --f-article-h2:30px;
     }
     }
 
@@ -333,6 +347,10 @@ input{
         --m-footer-net: 50px;
         --f-footer-h1: 25px;
         --f-footer-h2: 13px;
+
+        --m-article: 42px;
+        --f-article-h1: 28px;
+            --f-article-h2:26px;
     }
 }
 
@@ -361,6 +379,10 @@ input{
         --m-footer-net: 45px;
         --f-footer-h1: 20px;
         --f-footer-h2: 12px;
+
+        --m-article: 40px;
+        --f-article-h1: 25px;
+            --f-article-h2:23px;
     }
 }
 
@@ -390,5 +412,9 @@ input{
         --m-footer-net: 45px;
         --f-footer-h1: 20px;
         --f-footer-h2: 12px;
+
+        --m-article: 38px;
+        --f-article-h1: 22px;
+            --f-article-h2:21px;
     }
 }
