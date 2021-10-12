@@ -8,6 +8,7 @@
     --color-azul-claro: #1058D5;
 
 
+
     --w-nav-icon: 30px;
     --w-nav-input: 500px;
     --w-card-img: 700px;
@@ -16,13 +17,16 @@
     --w-nav-luna: 30px;
     --w-hero-icon: 90px;
 
+
     --m-lados: 60px;
     --m-lados-m: 20px;
     --m-nav: 15px;
     --m-card-img: 80px;
     --m-footer-net: 60px;
     --m-article: 60px;
+
     --m-nav-g: 30px;
+
 
 
     --f-nav-input: 20px;
@@ -34,7 +38,9 @@
     --f-footer-h2: 20px;
     --f-article-h1: 40px;
     --f-article-h2:35px;
+
     --f-hero-h3: 20px;
+
 
     --b-card-img: 10px;
 
@@ -58,7 +64,9 @@
 
 .navegation{
     margin: var(--m-lados) var(--m-lados-m) ;
+
     width: 95%;
+
     
     background-color: var(--color-Background);
     display: flex;
@@ -97,7 +105,9 @@
 
 #searchBox{
     margin:0px;
+
     padding: 0px;
+
     border-radius: 50px;
     background-color:var(--color-Background);
     display: flex;
@@ -123,6 +133,7 @@ input{
     outline: none;
     color: rgb(255, 255, 255);
     transition: 2s;
+
     margin: 0;
 }
 
@@ -186,6 +197,7 @@ input{
     justify-content: flex-start;
     flex-direction: column;
     width: 100%;
+
 }
 
 .hero-text{
@@ -200,6 +212,7 @@ input{
     font-size: var(--f-hero);
     font-weight: bold;
 }
+
 
 .hero-text img{
     margin: auto 0;
@@ -220,8 +233,6 @@ input{
     font-weight: normal;
     margin: var(--m-nav-g) 0;
 }
-
-
 
 
 
@@ -296,6 +307,7 @@ input{
     border-radius: var(--b-card-img);
 }
 
+
 .card-imagen-items{
     width: 45%;
     display: flex;
@@ -311,11 +323,14 @@ input{
 }
 
 .card-imagen-items h3{
+
     color: var(--color-gris-1);
     font-size: var(--f-card-h3);
     font-weight: normal;
     margin: 0 5px;
 }
+
+
 
 
 
@@ -368,6 +383,7 @@ input{
 .footer h2{
     color: white;
     font-size: var(--f-footer-h2);
+
     font-weight: normal;
     text-align: center;
 }
@@ -462,6 +478,7 @@ input{
     --w-hero-icon: 80px;
  --m-nav-g: 25px;
 --f-hero-h3: 15px;
+
 }
 }
 
@@ -612,10 +629,12 @@ input{
         --f-article-h1: 22px;
             --f-article-h2:21px;
 
+
             --w-nav-dark:40px;
             --w-nav-luna:14px;
             --w-hero-icon: 50px;
          --m-nav-g: 12px;
         --f-hero-h3: 9px;
+
     }
 }
