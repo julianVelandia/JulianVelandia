@@ -296,12 +296,41 @@ input{
     border-radius: var(--b-card-img);
 }
 
-.card-imagen h3{
+.card-imagen-items{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0px;
+    padding: 0px;
+}
+
+.card-imagen-items img{
+    width: var(--w-nav-luna);
+    margin: 0;
+}
+
+.card-imagen-items h3{
     color: var(--color-gris-1);
     font-size: var(--f-card-h3);
     font-weight: normal;
     margin: 0 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     display: flex;
@@ -458,7 +487,7 @@ input{
         --s-nav: 1px;
         --s-nav-s: 3px;
 
-        --w-footer-item: 45px;
+        --w-footer-item: 40px;
         --m-footer-net: 50px;
         --f-footer-h1: 25px;
         --f-footer-h2: 13px;
