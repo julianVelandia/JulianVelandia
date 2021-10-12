@@ -19,6 +19,8 @@
     --m-card-img: 80px;
     --m-footer-net: 60px;
     --m-article: 60px;
+    --m-nav-g: 30px;
+
 
     --f-nav-input: 20px;
     --f-hero: 60px;
@@ -44,6 +46,12 @@
     background-color: var(--color-Background);
 }
 
+
+
+
+
+
+
 .navegation{
     margin: var(--m-lados) var(--m-lados-m) ;
     width: 100%;
@@ -54,10 +62,30 @@
     justify-content: flex-start;
 }
 
+.navegation-logo{
+    
+    margin:0;
+    margin-right: var(--m-nav-g); 
+    padding: 0;
+    background-color: var(--color-Background);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--s-nav) var(--s-nav) var(--s-nav-s) 0px rgba(255,255,255,0.2);
+    text-decoration: none;
+}
+
+.navegation-logo img{
+
+    margin: var(--m-nav);
+    width: var(--w-nav-icon);
+    cursor:pointer;
+}
 
 #searchBox{
     margin:0px;
-    padding: 0;
+    padding: 0px;
     border-radius: 50px;
     background-color:var(--color-Background);
     display: flex;
@@ -83,12 +111,36 @@ input{
     outline: none;
     color: rgb(255, 255, 255);
     transition: 2s;
-    margin: var(--p-contenedor);
+    margin: 0;
 }
 
 .navegation-active input{
     width:var(--w-nav-input);
 }
+
+.navegation-active #navegationFlechas{
+    height: var(--w-nav-icon);
+    margin: var(--m-nav);
+    margin-left: 0;
+}
+
+
+#navegationFlechas{
+    margin: 0;
+    height: 0;
+    cursor:pointer;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+
+
+
+
+
+
+
+
 
 .hero{
     margin: var(--m-lados) var(--m-lados-m);
@@ -99,6 +151,13 @@ input{
     font-size: var(--f-hero);
     font-weight: bold;
 }
+
+
+
+
+
+
+
 
 .line{
     margin: var(--m-lados) var(--m-lados-m);
@@ -111,6 +170,13 @@ input{
     width: 100%;
     background-color: white;
   }
+
+
+
+
+
+
+
 
 .card {
     margin: var(--m-lados) var(--m-lados-m);
