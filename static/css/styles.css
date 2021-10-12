@@ -8,13 +8,13 @@
     --color-azul-claro: #1058D5;
 
 
-    --w-nav-icon: 25px;
+    --w-nav-icon: 30px;
     --w-nav-input: 500px;
     --w-card-img: 700px;
     --w-footer-item: 50px;
     --w-nav-dark:70px;
     --w-nav-luna: 30px;
-    --w-hero-icon: 70px;
+    --w-hero-icon: 90px;
 
     --m-lados: 60px;
     --m-lados-m: 20px;
@@ -158,12 +158,20 @@ input{
 
 .navegation-dark img{
     border-radius: 50px;
-    margin: 3px 5px;
+    margin: 3px 4px;
 
     width: var(--w-nav-luna);
     cursor:pointer;
     transition: 2s;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -203,6 +211,7 @@ input{
     align-items: flex-start;
     justify-content: flex-start;
     margin:0px;
+    text-decoration: none;
 }
 
 .hero-about h3{
@@ -391,8 +400,8 @@ input{
 
 @media (max-width: 1300px) and  (min-width: 900px) {
 :root {
-    --w-nav-icon: 20px;
-    --w-nav-input: 400px;
+    --w-nav-icon: 25px;
+    --w-nav-input: 450px;
     --w-card-img: 500px;
 
     --m-lados: 50px;
@@ -418,14 +427,20 @@ input{
     --m-article: 55px;
 --f-article-h1: 38px;
     --f-article-h2:32px;
+
+    --w-nav-dark:65px;
+    --w-nav-luna:25px;
+    --w-hero-icon: 80px;
+ --m-nav-g: 25px;
+--f-hero-h3: 15px;
 }
 }
 
 
 @media (max-width: 899px) and  (min-width: 700px) {
     :root {
-        --w-nav-icon: 15px;
-        --w-nav-input: 300px;
+        --w-nav-icon: 22px;
+        --w-nav-input: 330px;
         --w-card-img: 350px;
     
         --m-lados: 40px;
@@ -451,13 +466,20 @@ input{
         --m-article: 50px;
         --f-article-h1: 35px;
             --f-article-h2:30px;
+
+
+            --w-nav-dark:60px;
+    --w-nav-luna:20px;
+    --w-hero-icon: 75px;
+ --m-nav-g: 20px;
+--f-hero-h3: 12px;
     }
     }
 
 @media (max-width: 699px) and  (min-width: 520px) {
     :root {
-        --w-nav-icon: 10px;
-        --w-nav-input: 200px;
+        --w-nav-icon: 20px;
+        --w-nav-input: 210px;
         --w-card-img: 280px;
     
         --m-lados: 30px;
@@ -483,13 +505,19 @@ input{
         --m-article: 42px;
         --f-article-h1: 28px;
             --f-article-h2:26px;
+
+            --w-nav-dark:55px;
+    --w-nav-luna:18px;
+    --w-hero-icon: 65px;
+ --m-nav-g: 17px;
+--f-hero-h3: 11px;
     }
 }
 
 @media (max-width: 519px) and  (min-width: 375px) {
     :root {
-        --w-nav-icon: 8px;
-        --w-nav-input: 150px;
+        --w-nav-icon: 16px;
+        --w-nav-input: 160px;
         --w-card-img: 200px;
     
         --m-lados: 20px;
@@ -515,22 +543,28 @@ input{
         --m-article: 40px;
         --f-article-h1: 25px;
             --f-article-h2:23px;
+
+            --w-nav-dark:50px;
+            --w-nav-luna:16px;
+            --w-hero-icon: 60px;
+         --m-nav-g: 15px;
+        --f-hero-h3: 10px;
     }
 }
 
 
 @media (max-width: 374px)  {
     :root {
-        --w-nav-icon: 6px;
-        --w-nav-input: 100px;
+        --w-nav-icon: 13px;
+        --w-nav-input: 120px;
         --w-card-img: 170px;
     
         --m-lados: 15px;
         --m-lados-m: 7px;
-        --m-nav: 4px;
+        --m-nav: 5px;
         --m-card-img: 35px;
     
-        --f-nav-input: 6px;
+        --f-nav-input: 8px;
         --f-hero: 15px;
         --f-card-h1: 10px;
         --f-card-h2: 9px;
@@ -548,5 +582,11 @@ input{
         --m-article: 38px;
         --f-article-h1: 22px;
             --f-article-h2:21px;
+
+            --w-nav-dark:40px;
+            --w-nav-luna:14px;
+            --w-hero-icon: 50px;
+         --m-nav-g: 12px;
+        --f-hero-h3: 9px;
     }
 }
