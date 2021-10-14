@@ -165,19 +165,22 @@ input{
     justify-content: flex-start;
     box-shadow: var(--s-nav) var(--s-nav) var(--s-nav-s) 0px rgba(255,255,255,0.2);
     text-decoration: none;
+    
 }
 
 .navegation-dark img{
     border-radius: 50px;
     margin: 3px 4px;
-
     width: var(--w-nav-luna);
     cursor:pointer;
     transition: 2s;
 }
 
 
-
+.navegationLuz-active{
+    justify-content: flex-end;
+    background-color: white;
+}
 
 
 
