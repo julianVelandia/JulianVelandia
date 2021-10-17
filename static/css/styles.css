@@ -446,6 +446,65 @@ input{
 
 
 
+
+.cv{
+    
+    margin: var(--m-lados) var(--m-lados-m);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.cv-button{
+    text-decoration: none;
+    width: 30%;
+    margin: 0px 0px var(--m-lados) 0px;
+    padding: var(--m-nav);
+    
+    background-color: var(--color-azul-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: var(--b-card-img);
+    outline:none;
+    border:none;
+}
+.cv-button h1{
+    text-decoration: none;
+    background-color: var(--color-azul-claro);
+    margin: 0;
+    color: white;
+    font-size: var(--f-card-h3);
+}
+
+.cv img{
+    margin: 0px;
+    width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1300px) and  (min-width: 900px) {
 :root {
     --w-nav-icon: 25px;
