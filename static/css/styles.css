@@ -418,13 +418,24 @@ input{
 }
 
 .article h2{
+    margin: 0;
+    color: var(--color-gris-0);
+    font-size: var(--f-article-h2);
+    font-weight: bold;
+    margin-bottom: var(--m-article);
+}
+
+.article h3{
     color: var(--color-gris-0);
     font-size: var(--f-article-h2);
     font-weight: normal;
     margin-bottom: var(--m-article);
 }
 
-
+.article-link{
+    color: var(--color-azul-claro);
+    text-decoration: none;
+}
 
 
 
@@ -467,7 +478,6 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: normal;
     border-radius: var(--b-card-img);
     outline:none;
     border:none;
@@ -478,6 +488,8 @@ input{
     margin: 0;
     color: white;
     font-size: var(--f-card-h3);
+    font-weight: normal;
+
 }
 
 .cv img{
