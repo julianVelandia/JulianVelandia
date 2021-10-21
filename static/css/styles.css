@@ -6,7 +6,7 @@
     --color-gris-0: #E8E8E8;
     --color-gris-1: #D1D1D1;
     --color-azul-claro: #1058D5;
-
+    --color-morado: #2F0823;
 
 
     --w-nav-icon: 30px;
@@ -437,7 +437,18 @@ input{
     text-decoration: none;
 }
 
+.article-code{
+ 
+    margin-bottom: var(--m-article);
 
+    width: 70%;
+    background-color: var(--color-morado);
+    border-radius: var(--b-card-img);
+    padding: var(--m-nav);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
 
 
