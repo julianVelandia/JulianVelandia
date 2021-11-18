@@ -41,7 +41,7 @@
     --f-card-h3: 20px;
     --f-footer-h1: 30px;
     --f-footer-h2: 20px;
-    --f-article-h1: 40px;
+    --f-article-h1: 42px;
     --f-article-h2:35px;
 
     --f-hero-h3: 20px;
@@ -287,6 +287,7 @@ input{
     color: white;
     font-size: var(--f-card-h1);
     font-weight: bold;
+    margin: 0px;
     margin-bottom: 10%;
 }
 .card-texto h2{
