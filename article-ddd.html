@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Probando github-copilot</title>
+    <title>Presentación Domain Driven Design</title>
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
     <link rel="shortcut icon" type="image/png" href="static/img/logo.png"/>
 
@@ -42,186 +42,46 @@
         
 
     <section class="article">
-        <h1>Probando github-copilot</h1>
+        <h1>Presentación Domain Driven Design</h1>
         <h3>
-            Github copilot es la herramienta de autocompletado con inteligencia artificial que más expectativa ha creado en los últimos meses, ya que al estar hecha con la tecnología de GPT-3 para su autocompletado, se espera que se parezca mucho a un humano. Hace unos días me dieron acceso a esta herramienta, por eso, voy a hacer unas pruebas de código en varios lenguajes.
-            Todo el código se encuentra en este <a target="blank" class="article-link" href="https://github.com/julianVelandia/Github-copilot"> repositorio de github</a>
+            Presentación de las notas que saqué del libro Domain-Driven Design Distilled de Vaughn Vernon para el equipo de Mercado Libre en el que trabajo
         </h3>
 
+        <div class="video-responsive">
+        
+            <iframe src="https://www.youtube.com/embed/DwMMZlajSKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        
-
-        <h2>
-            HTML y CSS
-        </h2>
-
-        <h3>
-            Hice una plantilla básica de html y una carpeta con una hoja de estilo, lo primero que me sugiere es enlazar el css, hacer una navegación y con darle enter me sugiere agregar un título y subtítulo en un h1 y un h2, pero sin una clase de css
-        </h3>
-
-        <img src="static/articles/copilot/f1.png">
-        <img src="static/articles/copilot/f2.png">
-
-
-        <h3>
-            Si sigo con enter, me termina sugiriendo varios hola mundo en php, por lo que pondré comentarios
-        </h3>
-
-        <img src="static/articles/copilot/f3.PNG">
-
-        <h3>
-            Agregando comentarios parece que mejora, pero en realidad no hay un mayor cambio. Comenté que era una landing page de un sitio de noticias y me sugirió un div con un h3, pero esta vez sí sugirió clases de css y a medida que le daba enter, me sugería un ítem en un h4, pero con las clases de css bastante lógicas        
-        </h3>
-
-        <img src="static/articles/copilot/f4.PNG">
-
-        <h3>
-            Como última prueba, puse un comentario de que tenía una sección de noticias deportivas y me sugirió lo mismo que en la sección de arriba, pero con los nombres de deportes, entonces agregue otro comentario diciendo que tenía una imagen de deportes y me sugirió lo mismo pero con otros nombres
-        </h3>
-
-        <img src="static/articles/copilot/f5.PNG">
-
-        <h3>
-            Para los estilos tenía que escribir la clase y me sugería un formato para cada clase, lo bueno era que seguía un formato uniforme para todo el proyecto, pero sin nada especial
-        </h3>
-
-        <img src="static/articles/copilot/f6.PNG">
-
-
-        <h3>
-            El resultado final es el siguiente, si bien no tiene nada espectacular, creo que sí podría automatizar algunas tareas repetitivas, pero sencillas, lo que me gustó es que mantiene una hegemonía a lo largo del proyecto, tanto en los estilos como en el nombramiento de las clases, pero opino que para HTML y CSS si debe evolucionar un poco más   
-        </h3>
-
-        <img src="static/articles/copilot/f8.png">
-
-        <h2>
-            Go
-        </h2>
-
-        <h3>
-            Para Golang voy a probar  funciones y algoritmos sueltos, es decir sin ser parte de un proyecto.
-            <br>
-            Primero hice que me tokenizara una frase, sin bien el resultado es correcto, esperaba que me eliminara los conectores de la frase, pero funciona bien. Luego le dije que me devolviera los verbos de una frase y me sorprendió un poco porque lo soluciona excelentemente.
-
-        </h3>
-
-        <img src="static/articles/copilot/f9.png">
-
-        <h3>
-            pero luego me sugirió lo que iba a hacer, que era pedirle que hiciera lo mismo, pero con sustantivos y si bien no lo resolvió, la lógica que planteó tenía mucho sentido, solo había que cambiar la función  strings.HasPrefix por la palabra anterior
-
-        </h3>
-
-        <img src="static/articles/copilot/f10.png">
-        <img src="static/articles/copilot/f11.png">
-
-        <h3>
-            La segunda prueba que hice fue que me organizara una tabla de equipos, por medio de los puntos y la diferencia de gol y lo soluciona usando un bubblesort, pero sin tener en cuenta los goles
-
-        </h3>
-
-        <img src="static/articles/copilot/f12.png">
-
-        <h3>
-            En general quedé gratamente sorprendido, si bien hay que pulir un par de cosas y se debe saber lo que se está haciendo, si puede ser una herramienta muy valiosa
-
-        </h3>
-
-
-        <h2>
-            Python con Scrapy
-        </h2>
-
-        <h3>
-            Para python, voy a realizar un scraper sencillo con el framework scrapy
-            <br>
-            Para esto voy a extraer la información del sitio <a target="blank" class="article-link" href="https://www.brainyquote.com/topics/scrape-quotes">brainyquote</a>, el cual cuenta con una sección hecha para este fin.
-            <br>
-            Primero activé un entorno virtual con venv con las dependencias necesarias, en mi caso con scrapy y autopep8, luego creé el proyecto con el comando
-
-        </h3>
-
-        <div class="article-code">
-            <div  class="article-code-head"> 
-                <div class="article-code-head-container">
-                    <div class="article-code-head-ball achb1"></div>   
-                    <div class="article-code-head-ball achb2"></div>   
-                    <div class="article-code-head-ball achb3"></div> 
-                </div>   
-                   
-            </div>
-            <div class="article-code-text">
-                <h4>
-                    scrapy startproject brainyQuote
- <br />
-                   
-                </h4>
-            </div>
         </div>
-
-        <h3>
-            En la carpeta spyders, creé un archivo de python con el nombre brainyQuote y creé las variables necesarias, si bien la variable de xpath de las citas que me sugería no tenía sentido, la de los autores de esa cita era bastante lógica, sin embargo no era exacta
-
-        </h3>
-
-        <img src="static/articles/copilot/f13.png">
-
-        <h3>
-            Después hice la función principal, para la cual me recomendó la función completa con varias cosas útiles, los nombres que me sugería los dejé, ya que eran muy apropiados, y en las configuraciones agregué un utf8, para no tener problemas con el español, pero los otros 3 los dejé tal cual.
-<br>
-<br>
-En la función como tal me plantea saltar de link en link, sin embargo las expresiones de Xpath solo traen texto, sin embargo si quisiera saltar de link en link, el código que me sugiere es muy bueno.
-
-<br>
-<br>
-Después de borrar lo que no servía, me recomendó un scraper por citas muy lógico, el cual terminé utilizando
-
-
-        </h3>
-
-        <img src="static/articles/copilot/f14.png">
-
-<h3>
-    Sin embargo, algunas citas venían vacías, entonces escribí el if y me recomendó exactamente el código que funcionaba, dando como resultado el json
-
-</h3>
-
-<img src="static/articles/copilot/f15.png">
-
-<h3>
-    En términos generales me gustó la herramienta, creo que la utilizaré bastante, ya que me automatiza muchas tareas y  me sugiere soluciones que de pronto me toque buscar en internet, sin embargo, sí creo que falta mejorar algunas cosas y se necesita a una persona que sepa de código para manejarla, pero igual no deja de ser una herramienta muy avanzada
-
-</h3>
-
+        
     </section>
 
     <div class="line">
         <hr>
     </div>
-
-    <footer class="footer">
-        <h1>
-            Contact
-        </h1>
-        <div class="footer-networks">
-            <a target="blank" href="https://github.com/julianVelandia">
-                <img  src="static/img/logoGithub.png">
-            </a>
-            <a target="blank" href="https://twitter.com/jvelandiag">
-                <img   src="static/img/logoTwitter.png">
-            </a>
-            <a  target="blank" href="https://www.linkedin.com/in/juli%C3%A1nvelandia/">
-                <img  src="static/img/logoLinkedin.png">
-            </a>
-            <a target="blank" href="https://www.instagram.com/jvelandiag/">
-                <img  src="static/img/logoInsta.png">
-            </a>
-        </div>
-        <h2>
-        Copyright © 2021. @julianVelandia <br> All Rights Reserved 
-        </h2>
-
-    </footer>
-
+        <footer class="footer">
+            <h1>
+                Contact
+            </h1>
+            <div class="footer-networks">
+                <a target="blank" href="https://github.com/julianVelandia">
+                    <img  src="static/img/logoGithub.png">
+                </a>
+                <a target="blank" href="https://twitter.com/jvelandiag">
+                    <img   src="static/img/logoTwitter.png">
+                </a>
+                <a  target="blank" href="https://www.linkedin.com/in/juli%C3%A1nvelandia/">
+                    <img  src="static/img/logoLinkedin.png">
+                </a>
+                <a target="blank" href="https://www.instagram.com/jvelandiag/">
+                    <img  src="static/img/logoInsta.png">
+                </a>
+            </div>
+            <h2>
+            Copyright © 2021. @julianVelandia <br> All Rights Reserved 
+            </h2>
+    
+        </footer>
+    
 
 </body>
 </html>

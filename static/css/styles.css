@@ -535,6 +535,19 @@ input{
 
 
 
+/* Start: Video Responsive */
+.video-responsive {
+
+    margin:0px;
+
+}
+.video-responsive iframe{
+
+    height:var(--w-card-img);
+    width:calc(2*var(--w-card-img));
+
+}
+/* End: Video Responsive */
 
 
 
