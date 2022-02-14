@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My notes and good practices with github</title>
     <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="static/img/logo.png"/>
+
 
 </head>
 <body>
@@ -22,11 +24,13 @@
                 <img src="static/img/flecha.png" id="navegationFlechas">
                 
             </div>
+
         </div>
         
-        <div class="navegation-dark">
-            <img src="static/img/luna.png" >
+        <div class="navegation-dark" id="navegationDark">
+            <img src="static/img/luna.png" id="navegationDarkLuna" >
         </div>
+
     </nav>
 
     <script src="nav.js">
@@ -40,18 +44,130 @@
 
     <section class="article">
         <h1>My notes and good practices with github</h1>
-        <img src="static/articles/github-prueba.png">
+        <h3>
+            In my current job there is a high level of organization and communication, when developing projects and requirements, since we are 9 people in the team, who work remotely, that is why I am going to share some of the the good practices we use with github, our version control system
+        </h3>
+
+        <img src="static/articles/github/h1.png">
+
         <h2>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus sit alias, earum explicabo porro a repellat blanditiis, praesentium corporis nam voluptatum numquam voluptate maiores rerum aut impedit, eius provident!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus sit alias, earum explicabo porro a repellat blanditiis, praesentium corporis nam voluptatum numquam voluptate maiores rerum aut impedit, eius provident!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus sit alias, earum explicabo porro a repellat blanditiis, praesentium corporis nam voluptatum numquam voluptate maiores rerum aut impedit, eius provident!
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus sit alias, earum explicabo porro a repellat blanditiis, praesentium corporis nam voluptatum numquam voluptate maiores rerum aut impedit, eius provident!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus sit alias, earum explicabo porro a repellat blanditiis, praesentium corporis nam voluptatum numquam voluptate maiores rerum aut impedit, eius provident!
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus sit alias, earum explicabo porro a repellat blanditiis, praesentium corporis nam voluptatum numquam voluptate maiores rerum aut impedit, eius provident!
+            Basic commands
         </h2>
 
+        <h3>
+            Git provides us with a large number of <a target="blank" class="article-link" href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6"> commands </a>, however, the four basic commands used in git are the following:
+        </h3>
+        <div class="article-code">
+            <div  class="article-code-head"> 
+                <div class="article-code-head-container">
+                    <div class="article-code-head-ball achb1"></div>   
+                    <div class="article-code-head-ball achb2"></div>   
+                    <div class="article-code-head-ball achb3"></div> 
+                </div>   
+                   
+            </div>
+            <div class="article-code-text">
+                <h4>
+                    git pull <br />
+                    git add . <br />
+                    git commit -m “Changes”<br />
+                    git push<br />
+                </h4>
+            </div>
+        </div>
+        
+        <h3>
+            I have read in many forums and videos that 
+            using only these 4 commands can cause problems, 
+            for example in the free code camp video <a target="blank" class="article-link" href="https://www.youtube.com/watch?v=Uszj_k0DGsg&t=1483s">“Git for Professionals Tutorial - Tools & Concepts for Mastering Version Control with Git”</a> ,
+            it is suggested that instead of using git add . 
+            to upload all the changes to all the files, 
+            use git add < FILE NAME >, even decide by hand the changes to be made with the git add -p < FILE NAME > command, they also emphasize that the message is concrete and descriptive, in addition to being a commit per topic
+        </h3>
+        <div class="article-code">
+            <div  class="article-code-head"> 
+                <div class="article-code-head-container">
+                    <div class="article-code-head-ball achb1"></div>   
+                    <div class="article-code-head-ball achb2"></div>   
+                    <div class="article-code-head-ball achb3"></div> 
+                </div>   
+                   
+            </div>
+            <div class="article-code-text">
+                <h4>
+                    git add < FILE NAME > <br />
+                    git add -p < FILE NAME ></FILE> <br />
+                    
+                </h4>
+            </div>
+        </div>
+
+        <h3>
+            However, in the team we carry out these basic actions in a slightly different way with the goland editor, always at the beginning of the day or when necessary, change to the integrating branch and bring the changes, and then move on to the branch of the task and merge select into current, this action package is also called rebase, or bring changes from the parent branch
+        </h3>
+
+        <img src="static/articles/github/f2.PNG">
+
+        <h3>
+            Later, when we finish a task, we upload the changes with the visual tools, selecting all the files and those with changes that we do not want to upload are returned to the initial state with a rollback.        </h3>
+
+        <img src="static/articles/github/f3.PNG">
+
+        <h3>
+            For edited files, the <a target="blank" class="article-link" href="https://www.youtube.com/watch?v=Uszj_k0DGsg&t=1483s">video</a> suggests using the git diff < FILE NAME > command, which on the computer we do it visually simply by selecting the file, and if there is something that should not be, it is resolved in that same editor
+        </h3>
+
+        <img src="static/articles/github/f5.PNG">
+        <img src="static/articles/github/f6.PNG">
+
+        <h3>
+            Finally, you finish uploading changes with the commit and push button, however it can be done with the git push command, or by specifying the branch
+        </h3>
+
+        <h2>
+            GitFlow
+        </h2>
+
+        <h3>
+            Another important issue when coordinating high-performance remote teams is the flow and conventions that will be used, for this there are several methodologies and frameworks, for which, I recommend the
+            <a target="blank" class="article-link" href="https://www.youtube.com/watch?v=HhI77BXRjuo">Codly.TV video series</a>, where they detail the pros and cons of each. In the specific case of Git Flow, which is the best-known flow, they highlight that for small teams it is cumbersome and generates many unnecessary ramifications, with which I totally agree, but when it comes to having larger teams and larger developments, If it makes sense to use a flow of this style, that's why in the team we use a modification of the classic Git Flow, which is practically the same GitFlow, but with a test integration to the release branch, this because many times When we fix bugs in the apps, we upload new feature changes that are not yet stable.
+            <br />
+            <br />
+            For the naming of the rams, a <a target="blank" class="article-link" href="https://semver.org/lang/es/">semantic versioning</a> is used as in gitFlow
+        </h3>
+
+        <img src="static/articles/github/f10.png">
+
+        <h3>
+            There are 2 stable branches: Master and develop, 2 branches for release: the master and the hotfix /. and 2 other branches of work: feature /.* and fix /.*
+        <br />
+        <br />
+            The following figure illustrates the difference with gitflow
+        </h3>
+        <h2>Gitflow</h2>
+        <img src="static/articles/github/f9.png">
+        <h2>
+            De nosotros
+        </h2>
+        <img src="static/articles/github/f4.PNG">
+
+        <h2>
+            Pull Request
+        </h2>
+
+        <h3>
+            Finally, we make the pull requests to the integrator branch with the github interface, as seen in the following image
+        </h3>
+
+        <img src="static/articles/github/f7.PNG">
+
+        <h3>
+            Another custom that we have as a team is that each pull request has to have at least the approval of 3 colleagues, who review the changed files to give the approval, if there is any inconsistency, it is commented and fixed.
+        </h3>
+        <img src="static/articles/github/f8.PNG">
+<h3>
+    and finally, a squash and merge is performed to group all the commits into one and make it easier to read, finally the integrated branch is eliminated, this to avoid that there are many branches that do not work
+</h3>
     </section>
 
     <div class="line">
@@ -63,17 +179,17 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibu
             Contact
         </h1>
         <div class="footer-networks">
-            <a>
-                <img src="static/img/logoGithub.png">
+            <a target="blank" href="https://github.com/julianVelandia">
+                <img  src="static/img/logoGithub.png">
             </a>
-            <a>
-                <img src="static/img/logoGithub.png">
+            <a target="blank" href="https://twitter.com/jvelandiag">
+                <img   src="static/img/logoTwitter.png">
             </a>
-            <a>
-                <img src="static/img/logoGithub.png">
+            <a  target="blank" href="https://www.linkedin.com/in/juli%C3%A1nvelandia/">
+                <img  src="static/img/logoLinkedin.png">
             </a>
-            <a>
-                <img src="static/img/logoGithub.png">
+            <a target="blank" href="https://www.instagram.com/jvelandiag/">
+                <img  src="static/img/logoInsta.png">
             </a>
         </div>
         <h2>
@@ -81,6 +197,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibu
         </h2>
 
     </footer>
+
 
 </body>
 </html>
