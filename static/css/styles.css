@@ -5,6 +5,7 @@
     --color-Background: #161B22;
     --color-gris-0: #E8E8E8;
     --color-gris-1: #D1D1D1;
+
     --color-gris-3: #4C4B44;
     --color-azul-claro: #1058D5;
     --color-morado: #2F0823;
@@ -12,6 +13,7 @@
     --color-rojo-1: #F55C56;
 --color-amarillo-1: #F9BD42;
 --color-verde-1: #32C94A;
+
 
 
     --w-nav-icon: 30px;
@@ -69,11 +71,14 @@
 
 .navegation{
     margin: var(--m-lados) var(--m-lados-m) ;
+
     width: 95%;
+
     background-color: var(--color-Background);
     display: flex;
     align-items:  center;
     justify-content: space-between;
+
 }
 
 .navegation-container{
@@ -83,6 +88,7 @@
     align-items:  center;
     justify-content: center;
 }
+
 
 .navegation-logo{
     
@@ -107,7 +113,9 @@
 
 #searchBox{
     margin:0px;
+
     padding: 0px;
+
     border-radius: 50px;
     background-color:var(--color-Background);
     display: flex;
@@ -165,22 +173,25 @@ input{
     justify-content: flex-start;
     box-shadow: var(--s-nav) var(--s-nav) var(--s-nav-s) 0px rgba(255,255,255,0.2);
     text-decoration: none;
-    
+
 }
 
 .navegation-dark img{
     border-radius: 50px;
     margin: 3px 4px;
+
     width: var(--w-nav-luna);
     cursor:pointer;
     transition: 2s;
 }
 
 
+
 .navegationLuz-active{
     justify-content: flex-end;
     background-color: white;
 }
+
 
 
 
@@ -233,7 +244,9 @@ input{
 .hero-about h3{
     color: var(--color-azul-claro);
     font-size: var(--f-hero-h3);
+
     font-weight: bold;
+
     margin: var(--m-nav-g) 0;
 }
 
@@ -324,7 +337,9 @@ input{
 .card-imagen-items img{
     width: var(--w-nav-luna);
     margin: 0;
+
     border-radius: 50px;
+
 
 }
 
@@ -390,6 +405,7 @@ input{
 .footer h2{
     color: white;
     font-size: var(--f-footer-h2);
+
     font-weight: normal;
     text-align: center;
 }
